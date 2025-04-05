@@ -1518,18 +1518,32 @@ section,
 .portfolio .portfolio-filters li {
   cursor: pointer;
   display: inline-block;
-  padding: 0;
-  font-size: 18px;
+  padding: 8px 20px;
+  font-size: 16px;
   font-weight: 500;
-  margin: 0 10px;
+  margin: 0 5px 10px;
   line-height: 1;
-  margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
+  border-radius: 50px;
+  background: var(--surface-color);
+  color: var(--heading-color);
+  border: 2px solid transparent;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.portfolio .portfolio-filters li:hover,
-.portfolio .portfolio-filters li.filter-active {
+.portfolio .portfolio-filters li:hover {
   color: var(--accent-color);
+  border-color: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.2);
+}
+
+.portfolio .portfolio-filters li.filter-active {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
 }
 
 .portfolio .portfolio-filters li:first-child {
@@ -1543,7 +1557,8 @@ section,
 @media (max-width: 575px) {
   .portfolio .portfolio-filters li {
     font-size: 14px;
-    margin: 0 5px;
+    padding: 6px 15px;
+    margin: 0 3px 8px;
   }
 }
 
