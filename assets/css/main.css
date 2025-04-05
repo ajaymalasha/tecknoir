@@ -1841,6 +1841,9 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+
+@media (max-width: 768px) {
+  .container.section-title.custom-section-title {
+    padding: 0 0 2rem 2rem;
+  }
 }
