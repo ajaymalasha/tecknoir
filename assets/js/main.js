@@ -206,4 +206,25 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+  /**
+   * Contact email and phone click handlers
+   */
+  document.addEventListener('DOMContentLoaded', function() {
+    // Email click handler
+    const contactEmail = document.getElementById('contact-email');
+    if (contactEmail) {
+      contactEmail.addEventListener('click', function() {
+        window.location.href = 'mailto:ajaymalasha@tecknoir.com';
+      });
+    }
+
+    // Phone click handler
+    const contactNumber = document.getElementById('contact-number');
+    if (contactNumber) {
+      contactNumber.addEventListener('click', function() {
+        window.location.href = 'tel:+917733972226';
+      });
+    }
+  });
+
 })();

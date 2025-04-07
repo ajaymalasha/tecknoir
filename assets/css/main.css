@@ -2086,3 +2086,14 @@ html {
 .services .service-item:hover .details .icon i {
   transform: rotate(0deg);
 }
+
+.email-link {
+  color: var(--color-default);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.email-link:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
